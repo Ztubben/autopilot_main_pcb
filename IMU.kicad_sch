@@ -2116,7 +2116,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.ceva-ip.com/wp-content/uploads/BNO080_085-Datasheet.pdf"
 			(at 138.43 115.57 0)
 			(effects
 				(font
@@ -2125,7 +2125,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "9DoF IMU"
 			(at 138.43 115.57 0)
 			(effects
 				(font

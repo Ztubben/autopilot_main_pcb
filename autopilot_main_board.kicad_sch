@@ -220,7 +220,7 @@
 			(embedded_fonts no)
 		)
 	)
-	(text_box "TODO:\n\n[X] Check power management\n[X] Check current measurement resistors\n[X] Assign NMEA2000 connector\n[X] Motor Hall sensor input\n[ ] Assign footprints\n[X] Power input\n[X] Reset button\n[X] Add test points\n[X] VBUS monitoring\n[X] Phase voltage measuring\n[X] Oscillator circuit\n[X] Buck regulator\n[X] Limit switch input\n[X] Add IMU (BNO085)\n[X] Add ESP32 BT chip\n[X] Add temp sensor\n[X] Breakout GPIOs\n[ ] ESD protection\n[X] Run ERC\n\n\n\n"
+	(text_box "TODO:\n\n[X] Check power management\n[X] Check current measurement resistors\n[X] Assign NMEA2000 connector\n[X] Motor Hall sensor input\n[X] Assign footprints\n[X] Power input\n[X] Reset button\n[X] Add test points\n[X] VBUS monitoring\n[X] Phase voltage measuring\n[X] Oscillator circuit\n[X] Buck regulator\n[X] Limit switch input\n[X] Add IMU (BNO085)\n[X] Add ESP32 BT chip\n[X] Add temp sensor\n[X] Breakout GPIOs\n[ ] ESD protection\n[X] Run ERC\n\n\n\n"
 		(exclude_from_sim no)
 		(at 209.55 19.05 0)
 		(size 43.18 49.53)
