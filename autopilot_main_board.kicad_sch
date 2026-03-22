@@ -11,6 +11,86 @@
 		(company "Carl's Lab")
 	)
 	(lib_symbols
+		(symbol "Mechanical:Fiducial"
+			(exclude_from_sim no)
+			(in_bom no)
+			(on_board yes)
+			(property "Reference" "FID"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Fiducial"
+				(at 0 3.175 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Fiducial Marker"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "fiducial marker"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Fiducial*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Fiducial_0_1"
+				(circle
+					(center 0 0)
+					(radius 1.27)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Mechanical:MountingHole_Pad"
 			(pin_numbers
 				(hide yes)
@@ -220,6 +300,50 @@
 			(embedded_fonts no)
 		)
 	)
+	(rectangle
+		(start 109.22 190.5)
+		(end 133.35 195.58)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 959a808e-e34c-4de6-8fc2-c11691bbf8f9)
+	)
+	(rectangle
+		(start 134.62 180.34)
+		(end 175.26 195.58)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid f0754f4b-19d2-4975-9cc4-c0454fee291d)
+	)
+	(text "Mounting holes M3"
+		(exclude_from_sim no)
+		(at 143.764 179.324 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "251530af-ccd4-4b02-90ba-fe593ffa3a91")
+	)
+	(text "Fiducial markers"
+		(exclude_from_sim no)
+		(at 117.348 189.738 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "9694e1f8-cc56-4bd4-a422-5c56023e5a48")
+	)
 	(text_box "TODO:\n\n[X] Check power management\n[X] Check current measurement resistors\n[X] Assign NMEA2000 connector\n[X] Motor Hall sensor input\n[X] Assign footprints\n[X] Power input\n[X] Reset button\n[X] Add test points\n[X] VBUS monitoring\n[X] Phase voltage measuring\n[X] Oscillator circuit\n[X] Buck regulator\n[X] Limit switch input\n[X] Add IMU (BNO085)\n[X] Add ESP32 BT chip\n[X] Add temp sensor\n[X] Breakout GPIOs\n[ ] ESD protection\n[X] Run ERC\n\n\n\n"
 		(exclude_from_sim no)
 		(at 209.55 19.05 0)
@@ -410,7 +534,7 @@
 	)
 	(wire
 		(pts
-			(xy 144.78 180.34) (xy 144.78 182.88)
+			(xy 148.59 186.69) (xy 148.59 189.23)
 		)
 		(stroke
 			(width 0)
@@ -430,7 +554,7 @@
 	)
 	(wire
 		(pts
-			(xy 154.94 180.34) (xy 154.94 182.88)
+			(xy 158.75 186.69) (xy 158.75 189.23)
 		)
 		(stroke
 			(width 0)
@@ -560,7 +684,7 @@
 	)
 	(wire
 		(pts
-			(xy 134.62 180.34) (xy 134.62 182.88)
+			(xy 138.43 186.69) (xy 138.43 189.23)
 		)
 		(stroke
 			(width 0)
@@ -810,7 +934,7 @@
 	)
 	(wire
 		(pts
-			(xy 165.1 180.34) (xy 165.1 182.88)
+			(xy 168.91 186.69) (xy 168.91 189.23)
 		)
 		(stroke
 			(width 0)
@@ -995,17 +1119,16 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole_Pad")
-		(at 134.62 177.8 0)
+		(lib_id "Mechanical:Fiducial")
+		(at 127 193.04 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "3f69c3e9-55ef-4c37-bcc7-8246b98675d4")
-		(property "Reference" "H1"
-			(at 137.16 175.26 0)
+		(uuid "37426f7e-ee5c-436e-a5c0-b265d9a0786b")
+		(property "Reference" "FM3"
+			(at 128.778 193.294 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1014,16 +1137,17 @@
 			)
 		)
 		(property "Value" "~"
-			(at 137.16 177.8 0)
+			(at 129.54 194.3099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad"
-			(at 134.62 177.8 0)
+		(property "Footprint" "Fiducial:Fiducial_1mm_Mask2mm"
+			(at 127 193.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1032,7 +1156,71 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 134.62 177.8 0)
+			(at 127 193.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Fiducial Marker"
+			(at 127 193.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "autopilot_main_board"
+				(path "/65429680-7d64-40db-aa5f-8b5d6f88b508"
+					(reference "FM3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 138.43 184.15 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3f69c3e9-55ef-4c37-bcc7-8246b98675d4")
+		(property "Reference" "H1"
+			(at 140.716 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "~"
+			(at 140.97 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad"
+			(at 138.43 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 138.43 184.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1041,15 +1229,16 @@
 			)
 		)
 		(property "Description" ""
-			(at 134.62 177.8 0)
+			(at 138.43 184.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Manufacturer" "~"
-			(at 134.62 177.8 0)
+			(at 138.43 184.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1058,7 +1247,7 @@
 			)
 		)
 		(property "Manufacturer part number" "~"
-			(at 134.62 177.8 0)
+			(at 138.43 184.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1067,7 +1256,7 @@
 			)
 		)
 		(property "Supplier" ""
-			(at 134.62 177.8 0)
+			(at 138.43 184.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1076,7 +1265,7 @@
 			)
 		)
 		(property "Supplier part number" ""
-			(at 134.62 177.8 0)
+			(at 138.43 184.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1085,7 +1274,7 @@
 			)
 		)
 		(property "Package" ""
-			(at 134.62 177.8 0)
+			(at 138.43 184.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1094,7 +1283,7 @@
 			)
 		)
 		(property "Rating" ""
-			(at 134.62 177.8 0)
+			(at 138.43 184.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1103,7 +1292,7 @@
 			)
 		)
 		(property "Component" ""
-			(at 134.62 177.8 0)
+			(at 138.43 184.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1112,7 +1301,7 @@
 			)
 		)
 		(property "Or equivalent" ""
-			(at 134.62 177.8 0)
+			(at 138.43 184.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1121,7 +1310,7 @@
 			)
 		)
 		(property "LCSC" "~"
-			(at 134.62 177.8 0)
+			(at 138.43 184.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1142,8 +1331,72 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:Fiducial")
+		(at 119.38 193.04 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "40b5544e-dc8e-4816-8397-12141266a884")
+		(property "Reference" "FM2"
+			(at 121.158 193.294 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "~"
+			(at 121.92 194.3099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Fiducial:Fiducial_1mm_Mask2mm"
+			(at 119.38 193.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 119.38 193.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Fiducial Marker"
+			(at 119.38 193.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "autopilot_main_board"
+				(path "/65429680-7d64-40db-aa5f-8b5d6f88b508"
+					(reference "FM2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
-		(at 144.78 182.88 0)
+		(at 148.59 189.23 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1152,7 +1405,7 @@
 		(fields_autoplaced yes)
 		(uuid "4abc8fb8-828b-43f1-8470-c5353c3461fb")
 		(property "Reference" "#PWR02"
-			(at 144.78 189.23 0)
+			(at 148.59 195.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1161,7 +1414,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 144.78 187.96 0)
+			(at 148.59 194.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1169,7 +1422,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 144.78 182.88 0)
+			(at 148.59 189.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1178,7 +1431,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 144.78 182.88 0)
+			(at 148.59 189.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1187,7 +1440,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 144.78 182.88 0)
+			(at 148.59 189.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1209,16 +1462,15 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
-		(at 154.94 177.8 0)
+		(at 158.75 184.15 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "5046c11a-5b58-40f1-afe3-7d4dbc907727")
 		(property "Reference" "H3"
-			(at 157.48 175.26 0)
+			(at 161.036 182.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1227,16 +1479,17 @@
 			)
 		)
 		(property "Value" "~"
-			(at 157.48 177.8 0)
+			(at 161.29 184.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad"
-			(at 154.94 177.8 0)
+			(at 158.75 184.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1245,7 +1498,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 154.94 177.8 0)
+			(at 158.75 184.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1254,15 +1507,16 @@
 			)
 		)
 		(property "Description" ""
-			(at 154.94 177.8 0)
+			(at 158.75 184.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Manufacturer" "~"
-			(at 154.94 177.8 0)
+			(at 158.75 184.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1271,7 +1525,7 @@
 			)
 		)
 		(property "Manufacturer part number" "~"
-			(at 154.94 177.8 0)
+			(at 158.75 184.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1280,7 +1534,7 @@
 			)
 		)
 		(property "Supplier" ""
-			(at 154.94 177.8 0)
+			(at 158.75 184.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1289,7 +1543,7 @@
 			)
 		)
 		(property "Supplier part number" ""
-			(at 154.94 177.8 0)
+			(at 158.75 184.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1298,7 +1552,7 @@
 			)
 		)
 		(property "Package" ""
-			(at 154.94 177.8 0)
+			(at 158.75 184.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1307,7 +1561,7 @@
 			)
 		)
 		(property "Rating" ""
-			(at 154.94 177.8 0)
+			(at 158.75 184.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1316,7 +1570,7 @@
 			)
 		)
 		(property "Component" ""
-			(at 154.94 177.8 0)
+			(at 158.75 184.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1325,7 +1579,7 @@
 			)
 		)
 		(property "Or equivalent" ""
-			(at 154.94 177.8 0)
+			(at 158.75 184.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1334,7 +1588,7 @@
 			)
 		)
 		(property "LCSC" "~"
-			(at 154.94 177.8 0)
+			(at 158.75 184.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1356,7 +1610,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 154.94 182.88 0)
+		(at 158.75 189.23 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1365,7 +1619,7 @@
 		(fields_autoplaced yes)
 		(uuid "546a1ab7-b553-42f1-b864-2aebcac062e4")
 		(property "Reference" "#PWR03"
-			(at 154.94 189.23 0)
+			(at 158.75 195.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1374,7 +1628,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 154.94 187.96 0)
+			(at 158.75 194.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1382,7 +1636,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 154.94 182.88 0)
+			(at 158.75 189.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1391,7 +1645,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 154.94 182.88 0)
+			(at 158.75 189.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1400,7 +1654,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 154.94 182.88 0)
+			(at 158.75 189.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1422,16 +1676,15 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
-		(at 165.1 177.8 0)
+		(at 168.91 184.15 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "a66233ba-b23f-4cac-9716-9a4c35c6c10a")
 		(property "Reference" "H4"
-			(at 167.64 175.26 0)
+			(at 171.45 182.626 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1440,16 +1693,17 @@
 			)
 		)
 		(property "Value" "~"
-			(at 167.64 177.8 0)
+			(at 171.45 184.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad"
-			(at 165.1 177.8 0)
+			(at 168.91 184.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1458,7 +1712,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 165.1 177.8 0)
+			(at 168.91 184.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1467,15 +1721,16 @@
 			)
 		)
 		(property "Description" ""
-			(at 165.1 177.8 0)
+			(at 168.91 184.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Manufacturer" "~"
-			(at 165.1 177.8 0)
+			(at 168.91 184.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1484,7 +1739,7 @@
 			)
 		)
 		(property "Manufacturer part number" "~"
-			(at 165.1 177.8 0)
+			(at 168.91 184.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1493,7 +1748,7 @@
 			)
 		)
 		(property "Supplier" ""
-			(at 165.1 177.8 0)
+			(at 168.91 184.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1502,7 +1757,7 @@
 			)
 		)
 		(property "Supplier part number" ""
-			(at 165.1 177.8 0)
+			(at 168.91 184.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1511,7 +1766,7 @@
 			)
 		)
 		(property "Package" ""
-			(at 165.1 177.8 0)
+			(at 168.91 184.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1520,7 +1775,7 @@
 			)
 		)
 		(property "Rating" ""
-			(at 165.1 177.8 0)
+			(at 168.91 184.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1529,7 +1784,7 @@
 			)
 		)
 		(property "Component" ""
-			(at 165.1 177.8 0)
+			(at 168.91 184.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1538,7 +1793,7 @@
 			)
 		)
 		(property "Or equivalent" ""
-			(at 165.1 177.8 0)
+			(at 168.91 184.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1547,7 +1802,7 @@
 			)
 		)
 		(property "LCSC" "~"
-			(at 165.1 177.8 0)
+			(at 168.91 184.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1568,8 +1823,72 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:Fiducial")
+		(at 111.76 193.04 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "aa306542-d784-4a44-ba4f-cfa47c843e07")
+		(property "Reference" "FM1"
+			(at 113.538 193.294 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "~"
+			(at 114.3 194.3099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Fiducial:Fiducial_1mm_Mask2mm"
+			(at 111.76 193.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 111.76 193.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Fiducial Marker"
+			(at 111.76 193.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project ""
+				(path "/65429680-7d64-40db-aa5f-8b5d6f88b508"
+					(reference "FM1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
-		(at 134.62 182.88 0)
+		(at 138.43 189.23 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1578,7 +1897,7 @@
 		(fields_autoplaced yes)
 		(uuid "cf31e030-ebc4-44b6-b7be-d03ccfd4ca40")
 		(property "Reference" "#PWR01"
-			(at 134.62 189.23 0)
+			(at 138.43 195.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1587,7 +1906,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 134.62 187.96 0)
+			(at 138.43 194.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1595,7 +1914,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 134.62 182.88 0)
+			(at 138.43 189.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1604,7 +1923,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 134.62 182.88 0)
+			(at 138.43 189.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1613,7 +1932,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 134.62 182.88 0)
+			(at 138.43 189.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1635,7 +1954,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 165.1 182.88 0)
+		(at 168.91 189.23 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1644,7 +1963,7 @@
 		(fields_autoplaced yes)
 		(uuid "da0065fc-4b33-47b7-af1e-fcd6c43387e7")
 		(property "Reference" "#PWR04"
-			(at 165.1 189.23 0)
+			(at 168.91 195.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1653,7 +1972,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 165.1 187.96 0)
+			(at 168.91 194.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1661,7 +1980,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 165.1 182.88 0)
+			(at 168.91 189.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1670,7 +1989,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 165.1 182.88 0)
+			(at 168.91 189.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1679,7 +1998,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 165.1 182.88 0)
+			(at 168.91 189.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1701,16 +2020,15 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
-		(at 144.78 177.8 0)
+		(at 148.59 184.15 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "fcb78f55-d051-4d04-b924-a79c2690ee7c")
 		(property "Reference" "H2"
-			(at 147.32 175.26 0)
+			(at 150.876 182.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1719,16 +2037,17 @@
 			)
 		)
 		(property "Value" "~"
-			(at 147.32 177.8 0)
+			(at 151.13 184.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad"
-			(at 144.78 177.8 0)
+			(at 148.59 184.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1737,7 +2056,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 144.78 177.8 0)
+			(at 148.59 184.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1746,15 +2065,16 @@
 			)
 		)
 		(property "Description" ""
-			(at 144.78 177.8 0)
+			(at 148.59 184.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Manufacturer" "~"
-			(at 144.78 177.8 0)
+			(at 148.59 184.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1763,7 +2083,7 @@
 			)
 		)
 		(property "Manufacturer part number" "~"
-			(at 144.78 177.8 0)
+			(at 148.59 184.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1772,7 +2092,7 @@
 			)
 		)
 		(property "Supplier" ""
-			(at 144.78 177.8 0)
+			(at 148.59 184.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1781,7 +2101,7 @@
 			)
 		)
 		(property "Supplier part number" ""
-			(at 144.78 177.8 0)
+			(at 148.59 184.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1790,7 +2110,7 @@
 			)
 		)
 		(property "Package" ""
-			(at 144.78 177.8 0)
+			(at 148.59 184.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1799,7 +2119,7 @@
 			)
 		)
 		(property "Rating" ""
-			(at 144.78 177.8 0)
+			(at 148.59 184.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1808,7 +2128,7 @@
 			)
 		)
 		(property "Component" ""
-			(at 144.78 177.8 0)
+			(at 148.59 184.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1817,7 +2137,7 @@
 			)
 		)
 		(property "Or equivalent" ""
-			(at 144.78 177.8 0)
+			(at 148.59 184.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1826,7 +2146,7 @@
 			)
 		)
 		(property "LCSC" "~"
-			(at 144.78 177.8 0)
+			(at 148.59 184.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2793,7 +3113,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
 			(type solid)
@@ -2802,8 +3121,8 @@
 			(color 210 226 255 1.0000)
 		)
 		(uuid "a6f5e2ac-6097-42f9-b8df-86a29e157f49")
-		(property "Sheetname" "can"
-			(at 196.85 145.3384 0)
+		(property "Sheetname" "NMEA2000"
+			(at 205.486 145.796 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2904,7 +3223,7 @@
 			(color 210 226 255 1.0000)
 		)
 		(uuid "be58c50e-e605-4a83-8896-e9511d6f5f3c")
-		(property "Sheetname" "external_connectors"
+		(property "Sheetname" "Connectors"
 			(at 241.3 117.3984 0)
 			(effects
 				(font
@@ -3198,7 +3517,7 @@
 			(color 210 226 255 1.0000)
 		)
 		(uuid "dbbc2546-7b08-4cd6-9083-cf929f614696")
-		(property "Sheetname" "ESP32-C6"
+		(property "Sheetname" "ESP32"
 			(at 241.3 97.0784 0)
 			(effects
 				(font

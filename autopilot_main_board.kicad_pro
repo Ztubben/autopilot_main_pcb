@@ -193,6 +193,7 @@
       ],
       "track_widths": [
         0.0,
+        0.19,
         0.3,
         0.5,
         0.75,
@@ -502,26 +503,50 @@
       },
       {
         "name": "ESP32",
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 3,
+        "pcb_color": "rgb(0, 255, 1)",
+        "priority": 7,
+        "schematic_color": "rgba(0, 0, 0, 0.000)"
+      },
+      {
+        "name": "GND",
+        "pcb_color": "rgb(95, 100, 102)",
+        "priority": 2,
         "schematic_color": "rgba(0, 0, 0, 0.000)"
       },
       {
         "name": "IMU",
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 1,
+        "pcb_color": "rgb(0, 18, 255)",
+        "priority": 5,
+        "schematic_color": "rgba(0, 0, 0, 0.000)"
+      },
+      {
+        "name": "NMEA2000",
+        "pcb_color": "rgb(0, 255, 241)",
+        "priority": 3,
         "schematic_color": "rgba(0, 0, 0, 0.000)"
       },
       {
         "name": "Phase",
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "pcb_color": "rgb(255, 0, 207)",
+        "priority": 4,
+        "schematic_color": "rgba(0, 0, 0, 0.000)"
+      },
+      {
+        "name": "VDD",
+        "pcb_color": "rgb(255, 36, 41)",
         "priority": 0,
         "schematic_color": "rgba(0, 0, 0, 0.000)"
       },
       {
+        "name": "VM",
+        "pcb_color": "rgb(255, 0, 0)",
+        "priority": 1,
+        "schematic_color": "rgba(0, 0, 0, 0.000)"
+      },
+      {
         "name": "current_sense",
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 2,
+        "pcb_color": "rgb(255, 186, 0)",
+        "priority": 6,
         "schematic_color": "rgba(0, 0, 0, 0.000)"
       }
     ],
@@ -532,24 +557,36 @@
     "netclass_assignments": null,
     "netclass_patterns": [
       {
-        "netclass": "Default",
-        "pattern": "ESP32"
+        "netclass": "ESP32",
+        "pattern": "/ESP32*"
       },
       {
-        "netclass": "Default",
-        "pattern": "current_sense"
+        "netclass": "current_sense",
+        "pattern": "/current_sense_*"
       },
       {
-        "netclass": "Default",
-        "pattern": "can"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "IMU"
+        "netclass": "IMU",
+        "pattern": "/IMU/*"
       },
       {
         "netclass": "Phase",
-        "pattern": "Phase"
+        "pattern": "/phase*"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Default"
+      },
+      {
+        "netclass": "GND",
+        "pattern": "GND"
+      },
+      {
+        "netclass": "VM",
+        "pattern": "VM"
+      },
+      {
+        "netclass": "VDD",
+        "pattern": "VDD"
       }
     ]
   },
@@ -687,7 +724,7 @@
     ],
     [
       "be58c50e-e605-4a83-8896-e9511d6f5f3c",
-      "external_connectors"
+      "Connectors"
     ],
     [
       "995473fc-c288-4126-9886-5b99b9d10dcd",
@@ -699,7 +736,7 @@
     ],
     [
       "a6f5e2ac-6097-42f9-b8df-86a29e157f49",
-      "can"
+      "NMEA2000"
     ],
     [
       "16b9a2e6-3760-4c54-8dac-8c497271c545",
@@ -723,7 +760,7 @@
     ],
     [
       "dbbc2546-7b08-4cd6-9083-cf929f614696",
-      "ESP32-C6"
+      "ESP32"
     ],
     [
       "69b294a9-6873-479d-9206-157a1ecbcdf8",

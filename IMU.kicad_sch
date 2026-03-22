@@ -1545,6 +1545,16 @@
 		)
 		(uuid "ede6651d-d829-463e-b8db-1f39863b45b7")
 	)
+	(label "CAP"
+		(at 172.72 74.93 0)
+		(effects
+			(font
+				(size 0.635 0.635)
+			)
+			(justify left bottom)
+		)
+		(uuid "ae9eb561-5b12-4bf1-a638-7d5d4e551139")
+	)
 	(hierarchical_label "NRST"
 		(shape input)
 		(at 171.45 92.71 0)

@@ -5294,7 +5294,7 @@
 	)
 	(wire
 		(pts
-			(xy 165.1 104.14) (xy 184.15 104.14)
+			(xy 165.1 104.14) (xy 191.77 104.14)
 		)
 		(stroke
 			(width 0)
@@ -5594,6 +5594,16 @@
 	)
 	(wire
 		(pts
+			(xy 168.91 101.6) (xy 165.1 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "feff26bd-3126-46e8-baed-0e0b6240e674")
+	)
+	(wire
+		(pts
 			(xy 46.99 78.74) (xy 46.99 71.12)
 		)
 		(stroke
@@ -5846,7 +5856,7 @@
 		(uuid "402f8737-65ad-43e4-98a8-acb5e4c924d9")
 	)
 	(label "SCREF"
-		(at 184.15 104.14 180)
+		(at 191.77 104.14 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6215,7 +6225,7 @@
 	)
 	(global_label "EXT_PD2"
 		(shape bidirectional)
-		(at 165.1 101.6 0)
+		(at 168.91 101.6 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6225,7 +6235,7 @@
 		)
 		(uuid "dbff5f0d-9925-485d-8ee3-d8a06bfa4449")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 177.2397 101.6 0)
+			(at 181.0497 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9951,7 +9961,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Inductor_SMD:L_0603_1608Metric"
+		(property "Footprint" "Inductor_SMD:L_1206_3216Metric"
 			(at 199.39 35.56 0)
 			(effects
 				(font
