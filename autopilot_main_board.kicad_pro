@@ -48,7 +48,7 @@
         "silk_text_thickness": 0.1,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.5
+          "min_clearance": 0.25
         }
       },
       "diff_pair_dimensions": [
@@ -63,7 +63,24 @@
           "width": 0.3
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        [
+          "silk_edge_clearance|99811470|104350000|3b91b531-238c-41ba-9dda-91f8d9d7da77|7b4d0d93-a0b9-479f-83be-f1f8511d512b",
+          ""
+        ],
+        [
+          "silk_edge_clearance|99821758|90850000|3b91b531-238c-41ba-9dda-91f8d9d7da77|ef1997ef-dbdf-4372-bf7c-b1d77882bddb",
+          "ESP32 supposed to hang out of the board outline"
+        ],
+        [
+          "starved_thermal|115900000|122537500|dee4ac01-5089-45fe-9f17-88ce36d3e3d6|72f9c396-f75b-416e-9113-96951ffe75d9|F.Cu",
+          ""
+        ],
+        [
+          "starved_thermal|154975000|103200000|dee4ac01-5089-45fe-9f17-88ce36d3e3d6|c9b6c970-c8ba-43f2-ad89-d57ecf6f28f9|F.Cu",
+          ""
+        ]
+      ],
       "meta": {
         "version": 2
       },
@@ -110,7 +127,7 @@
         "silk_overlap": "warning",
         "skew_out_of_range": "error",
         "solder_mask_bridge": "error",
-        "starved_thermal": "error",
+        "starved_thermal": "warning",
         "text_height": "warning",
         "text_on_edge_cuts": "error",
         "text_thickness": "warning",
@@ -497,57 +514,121 @@
         "priority": 2147483647,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.2,
-        "via_diameter": 0.6,
+        "via_diameter": 0.7,
         "via_drill": 0.3,
         "wire_width": 6
       },
       {
+        "clearance": 0.2,
+        "diff_pair_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
         "name": "ESP32",
         "pcb_color": "rgb(0, 255, 1)",
         "priority": 7,
-        "schematic_color": "rgba(0, 0, 0, 0.000)"
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.2,
+        "via_diameter": 0.7,
+        "via_drill": 0.3
       },
       {
+        "clearance": 0.2,
+        "diff_pair_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
         "name": "GND",
         "pcb_color": "rgb(95, 100, 102)",
         "priority": 2,
-        "schematic_color": "rgba(0, 0, 0, 0.000)"
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.2,
+        "via_diameter": 0.7,
+        "via_drill": 0.3
       },
       {
+        "clearance": 0.2,
+        "diff_pair_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
         "name": "IMU",
         "pcb_color": "rgb(0, 18, 255)",
         "priority": 5,
-        "schematic_color": "rgba(0, 0, 0, 0.000)"
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.2,
+        "via_diameter": 0.7,
+        "via_drill": 0.3
       },
       {
+        "clearance": 0.2,
+        "diff_pair_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
         "name": "NMEA2000",
         "pcb_color": "rgb(0, 255, 241)",
         "priority": 3,
-        "schematic_color": "rgba(0, 0, 0, 0.000)"
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.2,
+        "via_diameter": 0.7,
+        "via_drill": 0.3
       },
       {
+        "clearance": 0.2,
+        "diff_pair_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
         "name": "Phase",
         "pcb_color": "rgb(255, 0, 207)",
         "priority": 4,
-        "schematic_color": "rgba(0, 0, 0, 0.000)"
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.2,
+        "via_diameter": 0.7,
+        "via_drill": 0.3
       },
       {
+        "clearance": 0.2,
+        "diff_pair_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
         "name": "VDD",
         "pcb_color": "rgb(255, 36, 41)",
         "priority": 0,
-        "schematic_color": "rgba(0, 0, 0, 0.000)"
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.2,
+        "via_diameter": 0.7,
+        "via_drill": 0.3
       },
       {
+        "clearance": 0.2,
+        "diff_pair_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
         "name": "VM",
         "pcb_color": "rgb(255, 0, 0)",
         "priority": 1,
-        "schematic_color": "rgba(0, 0, 0, 0.000)"
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.2,
+        "via_diameter": 0.7,
+        "via_drill": 0.3
       },
       {
+        "clearance": 0.2,
+        "diff_pair_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
         "name": "current_sense",
         "pcb_color": "rgb(255, 186, 0)",
         "priority": 6,
-        "schematic_color": "rgba(0, 0, 0, 0.000)"
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.2,
+        "via_diameter": 0.7,
+        "via_drill": 0.3
       }
     ],
     "meta": {
